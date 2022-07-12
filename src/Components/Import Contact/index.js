@@ -4,8 +4,10 @@ import Close from "../../Assets/images/close";
 import Radiobutton from "../../Assets/images/radiobutton";
 import DropDown from "../../Assets/images/dropDown";
 import RadioButtonGreen from "../../Assets/images/radiobuttongreen";
+import DropDownGrey from "../../Assets/images/dropdowngrey";
 import "./style.scss";
-import Checkbox from "@material-ui/core/Checkbox";
+// import Checkbox from "@material-ui/core/Checkbox";
+import Checkboxchecked from "../../Assets/images/checkboxchecked";
 import RadioButtonPlain from "../../Assets/images/radiobuttonplain";
 const ImportContact = (props) => {
   const [value, setValue] = useState(true);
@@ -22,7 +24,7 @@ const ImportContact = (props) => {
         <div className="head-box">
           <div className="head-box-buttons">
             <div className="head-box-import ">
-              <span className=" head-box-text">Import Contacts</span>
+              <span className=" head-import">Import Contacts</span>
             </div>
             <div className="head-box-history">
               <span className="head-box-text1">History</span>
@@ -69,91 +71,101 @@ const ImportContact = (props) => {
               <div className="table-2--heading-1">Columns</div>
               <div className="table-2--row-1">
                 <div className="table-2--row-1--checkbox-1">
-                  <Checkbox
-                    style={{ color: "#33bc7e", transform: "scale(0.9)" }}
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
+                    style={{ color: "#33bc7e", transform: "scale(0.9)"}}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-2--personname"> Person Name</div>
               </div>
               <div className="table-2--row-2">
                 <div className="table-2--row-2--checkbox-2">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-2--personphone"> Person Phone</div>
               </div>
               <div className="table-2--row-3">
                 <div className="table-2--row-3--checkbox-3">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-3--personemail"> Person Email</div>
               </div>
               <div className="table-2--row-4">
                 <div className="table-2--row-4--checkbox-4">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-4--address"> Address</div>
               </div>
               <div className="table-2--row-5">
                 <div className="table-2--row-5--checkbox-5">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-5--title"> Title</div>
               </div>
               <div className="table-2--row-6">
                 <div className="table-2--row-6--checkbox-6">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-6--currency"> Currency</div>
               </div>
               <div className="table-2--row-7">
                 <div className="table-2--row-7--checkbox-7">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-7--designation"> Designation</div>
               </div>
               <div className="table-2--row-8">
                 <div className="table-2--row-8--checkbox-8">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-8--followers"> Followers</div>
               </div>
               <div className="table-2--row-9">
                 <div className="table-2--row-9--checkbox-9">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
-                <div className="table-2--row-9--owners"> Owners</div>
+                <div className="table-2--row-9--owners"> Owner</div>
               </div>
               <div className="table-2--row-10">
                 <div className="table-2--row-10--checkbox-10">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-10--creationdate">
                   Creation Date
@@ -161,19 +173,21 @@ const ImportContact = (props) => {
               </div>
               <div className="table-2--row-11">
                 <div className="table-2--row-11--checkbox-11">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--row-11--visibleto">Visible To</div>
               </div>
               <div className="table-2--row-12">
                 <div className="table-2--row-12--checkbox-12">
-                  <Checkbox
+                {Checkboxchecked(16, 16)}
+                  {/* <Checkbox
                     style={{ color: "#33bc7e", transform: "scale(0.9)" }}
                     checked
-                  />
+                  /> */}
                 </div>
                 <div className="table-2--remarks">Remarks</div>
               </div>
@@ -183,55 +197,55 @@ const ImportContact = (props) => {
               <div className="column-2--row-1">
                 <div className="column-2--row-1--name">Name </div>
                 <div className="column-2--row-1--icon-1">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-2">
                 <div className="column-2--row-2--phone">Phone</div>
                 <div className="column-2--row-2--icon-2">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-3">
                 <div className="column-2--row-3--email"> Email</div>
                 <div className="column-2--row-3--icon-3">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-4">
                 <div className="column-2--row-4--address"> Address</div>
                 <div className="column-2--row-4--icon-4">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-5">
                 <div className="column-2--row-5--title"> Title</div>
                 <div className="column-2--row-5--icon-5">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-6">
                 <div className="column-2--row-6--currency"> Currency</div>
                 <div className="column-2--row-6--icon-6">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-7">
                 <div className="column-2--row-7--designation">Designation</div>
                 <div className="column-2--row-7--icon-7">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-8">
                 <div className="column-2--row-8--followers">Followers</div>
                 <div className="column-2--row-8--icon-8">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-9">
-                <div className="column-2--row-9--select">--Select--</div>
+                <div className="column-2--row-9--select">Owner</div>
                 <div className="column-2--row-9--icon-9">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-10">
@@ -239,19 +253,19 @@ const ImportContact = (props) => {
                   Creation Date
                 </div>
                 <div className="column-2--row-10--icon-10">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-11">
                 <div className="column-2--row-11--visibleto">Visible To</div>
                 <div className="column-2--row-11--icon-11">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
               <div className="column-2--row-12">
                 <div className="column-2--row-12--remarks">Remarks</div>
                 <div className="column-2--row-12--icon-12">
-                  {DropDown(16, 16)}
+                  {DropDownGrey(16, 16)}
                 </div>
               </div>
             </div>

@@ -22,6 +22,7 @@
     height: 30px;
     background: #33bc7e;
     border-radius: 5px;
+    color:#ffffff;
   }
   &-text {
     width: 113px;
@@ -207,6 +208,7 @@ margin-right:2px;
     //  padding:6px 4px 4px 8px;
     //  border: 2px solid green;
   }
+  
   &--row-2{
     box-sizing: border-box;
     // width:220px;
@@ -423,15 +425,13 @@ margin-right:2px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //width:220px;
-    // padding: 12px 167px 12px 36px;
-    //  border: 2px solid green;
-   &--name{
+    &--name{
     margin-left: 12px;
    }
    &--icon-1{
     margin-right:17.35px;
     margin-bottom:3px;
+    
    }
   }
   &--row-2 {
@@ -444,15 +444,13 @@ margin-right:2px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   // width:220px;
-    // padding: 12px 167px 12px 36px;
-    // border: 2px solid green;
-    &--phone{
+   &--phone{
       margin-left: 12px;
      }
      &--icon-2{
       margin-right:17.35px;
       margin-bottom:3px;
+      
      }
   }
   &--row-3 {
