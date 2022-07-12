@@ -1,0 +1,39 @@
+@import "../../Assets/styling/variable";
+
+.dialogbox-container {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  height: 100vh;
+  z-index: -1;
+  display: none;
+
+  &.active {
+    display: block;
+    right: 0;
+    z-index: 99;
+    background-color: #00000050;
+  }
+  .dialogbox-excrete {
+    width: 70%;
+
+    top: 0;
+    bottom: 0;
+  }
+.dialogbox {
+  position: absolute;
+  left: 40px;
+top: 30px;
+background: #FFFFFF;
+border-radius: 10px;
+width:calc(100vw - 80px);
+height:calc(100vh - 60px);
+// border: 2px solid blue;
+overflow: auto;
+ }
+  &.hide {
+    right: -30%;
+  }
+}

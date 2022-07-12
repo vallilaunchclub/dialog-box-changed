@@ -1,0 +1,27 @@
+@import '../../Assets/styling/variable';
+
+.setting-details {
+  font-size: 13px;
+  padding: 0px 15px;
+  border-bottom: 1px solid $border-color;
+
+  .setting-details--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+      font-size: 16px;
+    }
+    .settings {
+      color: $theme-text;
+    }
+  }
+}
+
+.setting-content-wrapper {
+  padding: 10px 15px;
+  .group-btn-wrapper {
+    width: 400px;
+  }
+}

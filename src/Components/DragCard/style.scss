@@ -1,0 +1,27 @@
+@import '../../Assets/styling/variable';
+
+.drag-card {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  padding: 12px 10px;
+  margin: 10px 0px;
+  display: flex;
+  .drag-title {
+    display: flex;
+    align-items: center;
+    flex: 2;
+
+    .type {
+      background: $theme-light-color;
+      border: 1px $theme-light-color;
+      color: $default-text;
+      padding: 0px 7px;
+      font-size: 12px;
+    }
+  }
+  .drag-options {
+    flex: 3;
+    display: flex;
+    align-items: center;
+  }
+}
