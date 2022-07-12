@@ -64,7 +64,10 @@ const ImportContact = (props) => {
             </div>
           </div>
        <div className="tables">
-        <div className="table-1">FIELDS</div>
+        <div className="table-1">
+          FIELDS
+          </div>
+          
         <div className="side-table">
           <div className="table-2">
             <div className="column-1">
@@ -272,7 +275,16 @@ const ImportContact = (props) => {
           </div>
         </div>
       </div>
+      <div className="bottombutton">
+      <div className="backbutton">
+        <span className="back">Back</span>
+      </div>
+      <div className="savebutton">
+        <span className="save">Save & Next</span>
+      </div>
+      </div>
     </div>
+    
   );
 };
 export default ImportContact;
