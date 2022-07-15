@@ -1,0 +1,181 @@
+@import "../../Assets/styling/_variable.scss";
+.filterbox {
+  width: 260px;
+  height: 635px;
+  overflow-y: auto;
+  &--box-1 {
+    background: #ffffff;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05);
+    &-content-1 {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      padding: 12px 35px;
+    }
+    &-innercontent {
+      gap: 6px;
+      &-heading {
+        width: 57px;
+        height: 18px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #33bc7e;
+      }
+      &-para {
+        height: 15px;
+        opacity: 0.6;
+      }
+    }
+  }
+  &--box-2 {
+    height: 204px;
+    background: #ffffff;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05);
+    gap: 20px;
+ &--content-1 {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 14px;
+      margin-bottom: 10px;
+
+      &--heading {
+        width: 36px;
+        height: 16px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        margin-left: 22px;
+      }
+      &--close-1 {
+        margin-right: 26px;
+        opacity: 0.6;
+      }
+    }
+    &--content-2 {
+      width: 226px;
+      height: 152px;
+      background: #e7f7f0;
+      margin-left: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      &--row-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 226px;
+        height: 38px;
+        box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05);
+
+        &-text {
+          width: 111px;
+          height: 18px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #000000;
+          margin-left: 10px;
+          padding-top: 10px;
+          &-icon {
+            margin-right: 20px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  &--box-3 {
+    height: 136px;
+    background: #ffffff;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05);
+    &--content-1 {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 14px;
+      &--heading {
+        width: 70px;
+        height: 16px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        margin-left: 22px;
+      }
+      &--close-1 {
+        margin-right: 22px;
+        opacity: 0.6;
+      }
+    }
+    &--content-2 {
+      width: 226px;
+      height: 76px;
+      background: #e7f7f0;
+      margin-left: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      &--row-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 226px;
+        height: 38px;
+        box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05);
+        &-text {
+          width: 111px;
+          height: 18px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #000000;
+          margin-left: 10px;
+          padding-top: 10px;
+          &-icon {
+            margin-right: 20px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .search {
+        opacity: 0.6;
+      }
+    }
+  }
+  &--box-4 {
+    height: 204px;
+    background: #ffffff;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  &--box-5 {
+    height: 66px;
+    background: linear-gradient(
+      360deg,
+      #ffffff 89.05%,
+      rgba(255, 255, 255, 0) 122.73%
+    );
+    box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.05);
+    &-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 40px;
+      gap: 8px;
+      width: 118px;
+      height: 36px;
+      margin: 15px 66px 15px 66px;
+      background: #33bc7e;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+    }
+    .apply {
+      width: 38px;
+      height: 16px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+    }
+  }
+}

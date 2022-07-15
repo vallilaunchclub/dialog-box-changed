@@ -69,7 +69,12 @@ const Contacts = (props) => {
           </div>
         </div>
         <div className="pr-3">
-        <span className="btn btn-secondary mx-2 my-3" onClick={()=>isClose(!close)}>Import Contacts</span>
+          <span
+            className="btn btn-secondary mx-2 my-3"
+            onClick={() => isClose(!close)}
+          >
+            Import Contacts
+          </span>
           {actionValues.length === 0 && (
             <span
               className="btn btn-primary mx-2 my-3"

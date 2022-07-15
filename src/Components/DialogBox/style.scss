@@ -1,7 +1,6 @@
 @import "../../Assets/styling/variable";
 
 .dialogbox-container {
-
   position: absolute;
   top: 0;
   left: 0;
@@ -22,17 +21,18 @@
     top: 0;
     bottom: 0;
   }
-.dialogbox {
-  position: absolute;
-  left: 40px;
-top: 30px;
-background: #FFFFFF;
-border-radius: 10px;
-width:calc(100vw - 80px);
-height:calc(100vh - 60px);
-// border: 2px solid blue;
-overflow: auto;
- }
+  .dialogbox {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    width: calc(100vw - 80px);
+    // width:94.44%;
+    height: calc(100vh - 60px);
+    // height:93.33%;
+   overflow: auto;
+  }
   &.hide {
     right: -30%;
   }
