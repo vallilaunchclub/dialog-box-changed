@@ -2,17 +2,23 @@ import React,{useState} from "react";
 import Close from "../../Assets/images/close";
 import DropDownGrey from "../../Assets/images/dropdowngrey";
 import "./styles.scss";
-function FilterBox (){
-    const [close, isClose] = useState(false);
+function FilterBox (props) {
+  const [close, isClose] = useState(false);
+  const {open} = props
+  const handleClose = () => {
+    isClose(!isClose);
+  };
+  const eventClose = () => {
+    isClose(!close);
+  };
     return (
     <div className="filterbox">
-       
-         <div className="filterbox--box-1">
+       <div className="filterbox--box-1">
             <div className="filterbox--box-1-content-1">
-           <div className="filterbox--box-1-close-1" onClick={() => isClose(true)}>
+           <div className="filterbox--box-1-close-1" onClick={props.handleopen}>
             {Close(20,20,"#33BC7E")}
+            </div>
             
-           </div>
            <div className="filterbox--box-1-innercontent">
             <div className="filterbox--box-1-innercontent-heading">
                 Filter (2)

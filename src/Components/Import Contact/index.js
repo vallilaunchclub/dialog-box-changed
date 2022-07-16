@@ -10,6 +10,7 @@ import FilterBox from "../Filterbox";
 import "./style.scss";
 import Checkboxchecked from "../../Assets/images/checkboxchecked";
 import RadioButtonPlain from "../../Assets/images/radiobuttonplain";
+
 const ImportContact = (props) => {
   const [value, setValue] = useState(true);
   const [data, setData] = useState(false);
@@ -20,7 +21,7 @@ const ImportContact = (props) => {
     setData(true);
   };
   const handleopen = () => {
-    open(!setopen);
+    setopen(!open);
   };
   return (
     <div>
@@ -68,9 +69,19 @@ const ImportContact = (props) => {
       <div className="tables">
         <div className="table-1">
           <div className="table-1-contenticon">
-            {open && <FilterBox />}
-            <div className="filter-icon" onClick={() => setopen(!open)}>
-              {Filter(20, 20)}
+            <div>
+              {
+                open &&
+                <FilterBox handleopen={handleopen}/>
+              }
+            </div>
+            <div>
+              {
+                (!open) &&
+                <div className="filter-icon" onClick={() => setopen(!open)}>
+                {Filter(20, 20)}
+              </div>
+              }
             </div>
           </div>
         </div>
